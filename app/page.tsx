@@ -141,7 +141,7 @@ Aguardo o vosso contacto. Obrigado!`;
                     <div className="absolute -inset-4 rounded-[2rem] bg-[#e9e6d9]" />
                     {/* Imagem externa: usa img para evitar configuração de domínio */}
                     <img
-                        src="/equipa.png"
+                        src="/equipa_teste.png"
                         alt="Profissional a realizar uma limpeza doméstica"
                         className="relative h-[360px] w-full rounded-[1.5rem] object-cover shadow-lg md:h-[520px]"
                     />
