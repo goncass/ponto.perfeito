@@ -163,7 +163,7 @@ Aguardo o vosso contacto. Obrigado!`;
 
           {/* Imagem externa: usa img para evitar configuração de domínio */}
           <img
-            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1400&q=85"
+            src="C:\Users\raste\pontoperfeito\public\equipa.PNG"
             alt="Profissional a realizar uma limpeza doméstica"
             className="relative h-[360px] w-full rounded-[1.5rem] object-cover shadow-lg md:h-[520px]"
           />
