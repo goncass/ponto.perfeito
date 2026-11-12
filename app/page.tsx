@@ -159,6 +159,45 @@ const processo: readonly ProcessoStep[] = [
   },
 ] as const;
 
+function Logo({ className = "h-10 md:h-12 w-auto", ariaLabel = "Ponto Perfeito — Limpezas Domésticas e Profissionais" }: { className?: string; ariaLabel?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 100 100"
+      fill="none"
+      aria-label={ariaLabel}
+      role="img"
+      style={{ display: "block" }}
+    >
+      <circle cx="50" cy="50" r="48" fill="#1B3A2E" />
+      <path
+        d="M50 18 C30 18 15 30 15 45 C15 55 25 65 35 72 C40 76 48 78 50 82 C52 78 60 76 65 72 C75 65 85 55 85 45 C85 30 70 18 50 18 Z"
+        fill="#FDFBF6"
+      />
+      <path
+        d="M50 18 C50 18 55 35 50 45 C45 55 40 65 38 70"
+        stroke="#1B3A2E"
+        strokeWidth="2"
+        fill="none"
+        strokeLinecap="round"
+      />
+      <path
+        d="M50 18 C50 18 45 35 50 45 C55 55 60 65 62 70"
+        stroke="#1B3A2E"
+        strokeWidth="1.5"
+        fill="none"
+        strokeLinecap="round"
+      />
+      <polygon
+        points="75,25 77,32 84,33 78,38 79,45 75,41 71,45 72,38 66,33 73,32"
+        fill="#8F9B7A"
+      />
+      <circle cx="30" cy="30" r="2" fill="#8F9B7A" opacity="0.6" />
+      <circle cx="70" cy="30" r="1.5" fill="#8F9B7A" opacity="0.4" />
+    </svg>
+  );
+}
+
 function WhatsAppIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" className={className}>
@@ -431,14 +470,7 @@ Aguardo o vosso contacto. Obrigado!`;
       <header className="sticky top-0 z-40 border-b border-creme-escuro bg-creme/95 backdrop-blur-xl">
         <div className="container flex items-center justify-between h-16 md:h-20">
           <a href="#inicio" aria-label="Ponto Perfeito — início" className="flex-shrink-0">
-            <Image
-              src="/logo.png"
-              alt="Ponto Perfeito — Limpezas Domésticas e Profissionais"
-              width={180}
-              height={180}
-              priority
-              className="h-10 md:h-12 w-auto object-contain"
-            />
+            <Logo className="h-10 md:h-12 w-auto" />
           </a>
           <nav className="hidden md:flex items-center gap-10" aria-label="Navegação principal">
             <a href="#servicos" className="text-sm font-medium text-texto-suave hover:text-verde-escuro transition-colors">Serviços</a>
@@ -869,13 +901,7 @@ Aguardo o vosso contacto. Obrigado!`;
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
             <div className="lg:col-span-2">
               <a href="#inicio" aria-label="Ponto Perfeito — início" className="inline-block mb-6">
-                <Image
-                  src="/logo.png"
-                  alt=""
-                  width={180}
-                  height={180}
-                  className="h-12 w-auto object-contain"
-                />
+                <Logo className="h-12 w-auto" ariaLabel="Ponto Perfeito" />
               </a>
               <p className="font-display text-lg text-verde-escuro mb-1">Ponto Perfeito</p>
               <p className="text-texto-suave text-sm">Limpezas domésticas e profissionais com atenção ao detalhe.</p>
