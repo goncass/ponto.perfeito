@@ -116,15 +116,15 @@ const faqs: readonly FAQ[] = [
   },
   {
     pergunta: "Quais as zonas que servem?",
-    resposta: "A nossa área principal é Loures e Odivelas, incluindo freguesias limítrofes. Se estás perto, contacta-nos na mesma — avaliamos a disponibilidade caso a caso.",
+    resposta: "A nossa área principal é Loures e Odivelas, incluindo freguesias limítrofes. Se estiver perto, contacte-nos na mesma — avaliamos a disponibilidade caso a caso.",
   },
   {
-    pergunta: "Tragam os vossos próprios produtos e equipamentos?",
-    resposta: "Sim, trazemos tudo o que é necessário: produtos de limpeza profissionais, aspiradores, panos de microfibra, baldes, etc. Se preferires produtos teus (ex: ecológicos, alergias), basta avisar.",
+    pergunta: "Trazem os vossos próprios produtos e equipamentos?",
+    resposta: "Sim, trazemos tudo o que é necessário: produtos de limpeza profissionais, aspiradores, panos de microfibra, baldes, etc. Se preferires os teus próprios produtos (ex: ecológicos, hipoalergénicos), basta avisar.",
   },
   {
     pergunta: "Como é feito o pagamento?",
-    resposta: "Aceitamos dinheiro, MB Way, transferência bancária ou cartão. O pagamento é feito no final do serviço, após verificação. Para limpezas recorrentes, combinamos a periodicidade (semanal, quinzenal, mensal).",
+    resposta: "Aceitamos dinheiro, MB Way ou transferência bancária. O pagamento é feito no final do serviço, após verificação. Para limpezas recorrentes, combinamos a periodicidade (semanal, quinzenal, mensal).",
   },
   {
     pergunta: "E se não ficar satisfeito com o serviço?",
@@ -475,7 +475,7 @@ Aguardo o vosso contacto. Obrigado!`;
                 <span className="font-normal italic text-salsa">O seu tempo de volta.</span>
               </h1>
               <p className="text-lg md:text-xl text-texto-suave leading-relaxed mb-8 max-w-lg">
-                Cuidamos da limpeza da sua casa ou escritório com atenção ao detalhe e uma abordagem próxima, adaptada ao que precisa. Equipa de confiança, produtos profissionais, zero stress.
+                Cuidamos da limpeza da sua casa ou escritório com atenção ao detalhe e uma abordagem próxima, adaptada às suas necessidades. Equipa de confiança, produtos profissionais, zero stress.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
                 <a href="#orcamento" className="btn btn-primary w-full sm:w-auto" aria-label="Pedir orçamento gratuito">
@@ -684,7 +684,7 @@ Aguardo o vosso contacto. Obrigado!`;
               nome="Ana Costa"
               localizacao="Santo Antão do Tojal"
               servico="Limpeza de escritório"
-              texto="Contratamos para o nosso escritório de 12 pessoas. Flexíveis no horário, discreto, e o espaço está sempre pronto para receber clientes."
+              texto="Contratámos para o nosso escritório de 12 pessoas. Flexíveis no horário, discreto, e o espaço está sempre pronto para receber clientes."
               avatar="/logo.png"
             />
           </div>
@@ -915,7 +915,7 @@ Aguardo o vosso contacto. Obrigado!`;
             </nav>
           </div>
           <div className="mt-10 md:mt-16 pt-8 border-t border-creme/50 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            <p className="text-sm text-texto-suave">© 2026 Ponto Perfeito — Limpezas Domésticas e Profissionais. Todos os direitos reservados.</p>
+            <p className="text-sm text-texto-suave">© {new Date().getFullYear()} Ponto Perfeito — Limpezas Domésticas e Profissionais. Todos os direitos reservados.</p>
             <div className="flex items-center gap-6 text-xs text-texto-suave">
               <a href="/politica-privacidade" className="hover:text-verde-escuro transition-colors">Política de Privacidade</a>
               <a href="/termos" className="hover:text-verde-escuro transition-colors">Termos de Utilização</a>
